@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgba(255,255,255,1);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); 
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #ff0000;
+    justify-content: space-between;
+    height: 80px;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: -4px 13px 8px -13px rgba(0,0,0,0.75);
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header a{
+    padding: 0 40px 0 40px;
+}
+
+.header-imageContainer{
+    background-color: #ff0000;
+    height: 80px;
+    display: flex;
+    margin-top: 0;
+}
+
+.header-menu{
+    display: flex;
+    align-self: center;
+}
+
+ol,
+ul{
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.fraseUno-content h1{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #808285;
+    font-size: 56px;
+    line-height: 49px;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+.fraseUno-content h4{
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    font-weight: lighter;
+}
+
+.fraseUno-content p{
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #808285;
+}
+
+.box-frase{
+    margin: 0 100px 0 100px;
+}
+
+.hero{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+.hero-imageContainer{
+    display: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+.hero-image{
+    width: 1380px;
+    height: 550px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    background-image: url();
+}
+
+.menu{
+    display: block;
+    border: 1px solid red;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -40px ;
+    background-color: #ff0000;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 2px 9px -2px rgba(0,0,0,1)
+}
+
+.menuLink{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 110px;
+    padding-bottom: 40px;
+}
+
+#menuLink{
+    border-left: 4px solid white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#fraseDos{
+    text-align: center;
+    color: #808285;
+    font-size: 30px;
+}
+
+.servicios{
+    padding-right: 40px;
+    padding-left: 15px;
+    display: flex;
+}
+
+
+.box{
+    border-radius: 10px;
+    margin: 20px; 
+    background-color: white;
+    box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.box-image{
+    padding: 0;
+    margin: 0;
+}
+
+.imageBox{
+    object-fit: cover;
+    padding: inherit;
+}
+
+.primeracaja{
+    
+    padding-left: 40px;
+    background-color: white;
+    position: relative;
+}
+
+.primeracaja p{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.segundacaja{
+    color: white;
+    margin-top: -480px;
+    padding-left: 20px;
+}
+
+.segundacaja p{
+    font-family: 'PT Sans', sans-serif; 
+}
+
+.socialMedia{
+    text-align: center;
+}
+
+.socialMedia h1{
+    color: #808285;
+    font-size: 40px;
+}
+
+.social-link{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 150px;
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.social-icon{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#fraseTres{
+    text-align: center;
+    font-size: 25px;
+    color: #808285;
+}
+
+.question{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buzon{  
+    border: 1px solid white;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+    height: 357px;
+}
+
+#buzonDos{
+    border-top: 4px solid black;
+}
+
+#fraseCuatro{
+    text-align: center;
+    font-size: 27px;
+    color: #808285;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#fraseCuatro p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.image-boxfrase{
+    margin-left: 20px;
+    padding-left: inherit;
+    padding: 0;
+}
+
+.imageCuatro{
+    height: 400px;
+    width: 700px;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #ff0000;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    margin-top: 40px;
+    font-family: 'PT Sans', sans-serif;
+    align-content: center;
+    align-items: center;
+}
+
+#containerFooter{
+    display: flex;
+    align-items: center;
+}
+
+#myTwitter{
+    text-decoration: none;
+    color: white;
+}
