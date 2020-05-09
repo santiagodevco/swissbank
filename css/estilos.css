@@ -162,6 +162,11 @@ h3{
     margin: 0;
 }
 
+#Limage{
+    max-width: 100%;
+    height: 100%;
+}
+
 .imageBox{
     object-fit: cover;
     padding: inherit;
@@ -180,7 +185,7 @@ h3{
 
 .segundacaja{
     color: white;
-    margin-top: -480px;
+    margin-top: -520px;
     padding-left: 20px;
 }
 
@@ -347,4 +352,101 @@ h3{
     .social-link{
         padding: 20px;
     }
+
+    .question{
+        display: block;
+    }
+
+    #buzonB{
+        margin-top: 30px;
+    }
+
+    .buzonUno{
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header-imageContainer{
+        text-align: center;
+        display: inherit;
+    }
+
+    .header .linkBox{
+        padding-left: 120px;
+        padding-bottom: 15px;
+        padding-right: 0;
+    }
+
+    .menuLink{
+        padding: 10px 0 10px 40px;
+        padding-right: 3%;
+    }
+
+    .servicios{
+        display: initial;
+    }
+
+    .box{
+        display: flex;
+        width: 94%;
+        height: auto;
+        display: block;
+    }
+
+    .primeracaja{
+        padding-bottom: 20px;
+    }
+    
+    .box-image{
+        padding-top: 60px;
+    }
+
+    .imageBox{
+        width: 100%;
+        height: 80%;
+        padding: 40px 40px;
+    }
+
+    #boxTwo{
+        display: block;
+    }
+
+    #boxTwo figure img{
+        height: 32em;
+        object-fit: cover;
+    }
+
+    .segundacaja{
+        color: white;
+        background-color: transparent;
+        position: relative;
+        margin-top: -179px;
+        padding-bottom: 70px;
+        text-align: justify;
+    }
+
+    .question{
+        margin: 0 25px;
+    }
+
+    .buzon{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    #buzonDos{
+        border: none;
+    }
+
+    #articulo{
+        padding: 20px 30px;
+    }
+
 }
