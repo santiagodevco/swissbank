@@ -126,8 +126,7 @@ h3{
     font-family: 'PT Sans', sans-serif;
     color: white;
     margin: 0;
-    padding: 110px;
-    padding-bottom: 40px;
+    padding: 10px 110px;
 }
 
 #menuLink{
@@ -295,6 +294,12 @@ h3{
 #myTwitter{
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 1280px){
+    .menuLink{
+        padding: 10px 90px;
+    }
 }
 
 @media screen and (max-width: 1024px){
