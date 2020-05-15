@@ -9,6 +9,7 @@
     <title>Swiss Bank LATAM</title>
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header" id="header">
         <figure class="header-imageContainer">
             <img class="header-image" src="images/logo.png" alt="logo swissbank" height="80">
@@ -45,14 +46,18 @@
     <section class="hero" id="hero">
         <article class="hero-details">
             <figure class="hero-imageContainer">
-                <img class="hero-image" src="images/hero-image.jpg" alt="Imagen del Hero">
+                <img class="hero-image" src="images/hero.jpg" alt="Imagen del Hero">
             </figure>
             <div class="menu">
-                <nav>
-                    <a class="menuLink" href="">Para tí</a>
-                    <a class="menuLink" id="menuLink" href="#question">Ayuda</a>
-                    <a class="menuLink" id="menuLink" href="">Productos</a>
+                <nav class="menuContainer">
+                    <div class="block">
+                        <a class="menuLink" href="">Para tí</a>
+                        <a class="menuLink" id="menuLink" href="#question">Ayuda</a>
+                    </div>
+                    <div class="block">
+                        <a class="menuLink" id="menuLink" href="">Productos</a>
                     <a class="menuLink" id="menuLink" href="">Novedades</a>
+                    </div>
                 </nav>
             </div>
         </article>
@@ -173,8 +178,39 @@
             <p> Modelo Frontend Banco</p>
         </div>
         <div>
-            <p>Designed with Lov <\3 for <a id="myTwitter" href="https://twitter.com/santiagocomag">@santiagocomag</a></p>
+            <p id="fraseFooter">Designed with Lov <\3 for <a id="myTwitter" href="https://twitter.com/santiagocomag">@santiagocomag</a></p>
         </div>
     </footer>
+    <script>
+        //console.log('Hola Mundo JS')
+            
+        const smarthPhone = window.matchMedia('screen and (max-width: 480px') 
+            const menu = document.querySelector('.header-menu')
+            //console.log(menu)
+            const burgerButton = document.querySelector('#burger-menu')
+            //console.log(burgerButton)
+            
+
+            smarthPhone.addListener(validation)
+            validation(smarthPhone)
+
+            function validation (event){
+                if (event.matches){
+                    burgerButton.addEventListener('click', hideShow)
+                }else{
+                    burgerButton.removeEventListener('click', hideShow)
+                }
+                //console.log(event)
+            }
+
+
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active')
+                }else{
+                    menu.classList.add('is-active')
+                }
+            }
+    </script>
 </body>
 </html>
