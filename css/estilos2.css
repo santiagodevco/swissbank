@@ -103,7 +103,7 @@ h3{
 .fraseUno-content h1{
     font-family: 'Nunito Sans', sans-serif;
     color: #808285;
-    font-size: 56px;
+    font-size: 49px;
     line-height: 49px;
     margin-top: 3px;
     margin-bottom: 12px;
@@ -155,7 +155,7 @@ h3{
     border: 1px solid red;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: -40px ;
+    margin-top: 20px ;
     background-color: #ff0000;
     padding: 20px;
     position: relative;
