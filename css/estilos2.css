@@ -220,6 +220,7 @@ h3{
     object-fit: cover;
     width: 100%;
     height: 400px;
+    overflow: hidden;
 }
 
 .socialMedia{
@@ -300,9 +301,6 @@ h3{
         grid-column-gap: 3em;
     }
 
-    .menuLink{
-        padding: 10px 0px;
-    }
 }
 
 @media screen and (max-width: 1024px){
@@ -310,12 +308,9 @@ h3{
         display: block;
     }
 
-    .menu{
-        margin: -40px 10px;
-    }
-
     .block{
-        grid-column-gap: 2em;
+        grid-gap: 2%;
+        grid-template: auto / repeat(3, minmax(200px, 1fr));
     }
 
     .menuLink{
@@ -324,61 +319,19 @@ h3{
     }
 
     .box{
-        width: 306px;
-        height: 550px;
+        grid-template: repeat(2, 400px) / 700px 200px;
     }
 
-    .box img{
-        width: 100%;
-        height: 80%;
-        font-size: 16px;
+    #boxItem{
+        margin-left: -180px;
     }
 
-    #Limage{
-        height: 25%;
-    }
-
-    .primeracaja p{
-        font-size: .85em;
-        margin-top: 2em;
-    }
-
-    .primeracaja h3{
-        font-size: 1em;
-    }
-
-    .segundacaja{
+    .socialMedia{
         margin: 0;
-        margin-top: -40%;
-        color: black;
-        position: relative;
-        padding-top: 5px;
-        display: block;
-        background-color: white;
-    }
-
-    .segundacaja p{
-        font-size: .85em;
-    }
-
-    .segundacaja h3{
-        font-size: 1em;
     }
 
     .social-link{
         padding: 20px;
-    }
-
-    .question{
-        display: block;
-    }
-
-    #buzonB{
-        margin-top: 30px;
-    }
-
-    .buzonUno{
-        border-top: none;
     }
 }
 
@@ -393,89 +346,32 @@ h3{
         display: inherit;
     }
 
-    .header .linkBox{
-        padding-left: 120px;
-        padding-bottom: 15px;
-        padding-right: 0;
-    }
-
-    .fraseUno-content h1{
-        font-size:50px;
-    }
-
-    .menu{
-        margin: -40px 10px;
-    }
-
-    .block{
-        grid-template: 40px/ repeat(4, minmax(100px, 1fr));
-        grid-column-gap: 5em;
-    }
-
-    .menuLink{
-        padding: 10px 0px;
-        padding-right: 4%;
-    }
-
-    #menuLink{
-        border: none;
-    }
-
-    .servicios{
-        display: initial;
+    .header-menu{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
     }
 
     .box{
-        display: flex;
-        width: 94%;
-        height: auto;
-        display: block;
+        grid-template: repeat(2, 360px) / 600px 180px;
     }
 
-    .primeracaja{
-        padding-bottom: 20px;
-    }
-    
-    .box-image{
-        padding-top: 60px;
+    .boxImage-Item{
+        height: 360px;
+        overflow: hidden;
     }
 
-    .imageBox{
-        width: 100%;
-        height: 80%;
-        padding: 40px 40px;
+    .box-frase{
+        margin: 0 50px;
     }
 
-    #boxTwo{
-        display: block;
+    #boxItem h3{
+        font-size: 22px;
     }
 
-    #boxTwo figure img{
-        height: 32em;
-        object-fit: cover;
-    }
-
-    .segundacaja{
-        color: white;
-        background-color: transparent;
-        position: relative;
-        margin-top: -179px;
-        padding-bottom: 70px;
-        text-align: justify;
-    }
-
-    .question{
-        margin: 0 25px;
-    }
-
-    .buzon{
-        display: flex;
-        justify-content: space-between;
-        height: auto;
-    }
-
-    #buzonDos{
-        border: none;
+    #boxItem p{
+        font-size: 18px;
     }
 
     #articulo{
@@ -514,7 +410,6 @@ h3{
 
     .header-menu ol {
         display: block;
-        
     }
 
     .header .linkBox{
@@ -531,7 +426,53 @@ h3{
     }
 
     .box-frase{
-        margin: 0 20px;
+        margin: 0 15px;
+    }
+
+    .fraseUno-content h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .block{
+        grid-gap: 1%;
+        grid-template: 253px / repeat(3, 1fr);
+    }
+    
+
+    #item h3{
+        font-size: 16px;
+    }
+
+    .creditos{
+        margin: 0;
+    }
+
+    .box{
+        grid-template: 300px 150px 300px 150px / 1fr;
+        margin: 0;
+    }
+
+    .boxImage-Item{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #boxItem{
+        margin-left: initial;
+    }
+
+    #boxItem h3{
+        font-size: 14px;
+    }
+
+    #boxItem p{
+        font-size: 14px;
+    }
+
+    .socialMedia h1{
+        font-size: 25px;
+        line-height: 35px;
     }
 
     .hero{
@@ -549,37 +490,9 @@ h3{
         border-radius: none;
     }
 
-    .menu{
-        margin: -40px 0px;
-        padding: 10px;
-        border-radius: 0px;
-    }
-
-    .block{
-        grid-template: 40px/ repeat(4, minmax(50px, 1fr));
-        grid-column-gap: 1.5em;
-    }
-
-    .menuLink{
-        padding: 10px 0px;
-        border: none;
-        font-size: 14px;
-    }
-
-    #menuLink{
-        padding-left: 7px;
-    }
-
-    .box{
-        margin: 10px;
-    }
-
-    .question{
-        margin: 20px 10px;
-    }
-
-    .buzon{
+    .socialMedia{
         display: block;
+        margin-top: 120px;
     }
 
     #fraseFooter{
@@ -589,35 +502,34 @@ h3{
 
 @media screen and (max-width: 330px){
     .fraseUno-content h1{
-        font-size: 44px;
+        font-size: 28px;
+    }
+
+    .block{
+        grid-gap: 0.3%;
+        grid-template: 200px / repeat(3, 1fr);
+    }
+
+    #item{
+        margin-top: 0;
+    }
+
+    #item  h3{
+        font-size: 12px;
+    }
+
+    .box-frase h1{
+        font-size: 25px;
+        line-height: 33px;
+        margin: 0;
     }
 
     .menu{
         padding: 5px;
     }
 
-    .block{
-        grid-column-gap: 1em;
-    }
-
     .menuLink{
         font-size: 12px;
     }
 
-    .fraseUno-content h4{
-        margin-left: 10px;
-        margin-top: 60px;
-    }
-
-    .segundacaja{
-        margin-top: -235px;
-    }
-
-    .buzon{
-        padding: 0 10px;
-    }
-
-    #articulo{
-        padding: 15px 5px;
-    }
 }
