@@ -4,10 +4,10 @@ Inspirado en el modelo de bancos online
 se estara modificando en versiones
 
 Diseñado con responsive desing
-Esta completada la primera versión:
+Esta completada la primera versión, la cual se continuara en proceso de terminado hasta el lanzamiento de la versión BETA
 
--solo cuenta con pagina principal
--contienene algunos bugs que se resolveran con el tiempo en la segunda versión
+Esta hecha con el unico fin de practicar conocimientos en HTML y CSS.
 
-Esta hecha con el unico fin de practicar lo que he aprendido en HTML y CSS.
-No es una página oficial ni un portafolio.
+Esta página hace parte de mi portafolio de servicios.
+
+Su uso es completamente libre para todos, y las condiciones estan descritas en la licencia.
