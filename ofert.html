@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necesidades</title>
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header" id="header">
+        <figure class="header-imageContainer">
+            <img class="header-image" src="images/logo.png" alt="logo swissbank" height="80">
+        </figure>
+        <nav class="header-menu" id="menu">
+            <ol class="linkBox">
+                <li>
+                    <a class="link" href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" href="#hero">Necesidades</a>
+                </li>
+                <li>
+                    <a class="link" href="">Ofertas</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <section class="box-frase" id="fraseUno">
+        <article class="fraseUno-content">
+            <h4>Inversión | Educación | Vehiculo</h4>
+            <h1>Si necesitas ayuda educativa, creditos de inversión hipotecaria,
+                o la compra del vehiculo de tus sueños.<br/> Este es lugar correcto</h1>
+        </article>
+    </section>
+    <section class="hero" id="hero">
+        <article class="hero-details">
+            <figure class="hero-imageContainer">
+                <img class="hero-image" src="images/estudiante.jpg" alt="Imagen del Hero">
+            </figure>
+            <div class="plan">
+                <div class="block">
+                    <div class="item">
+                        <figure class="itemImage-Container">
+                            <img class="itemImage" src="images/casa.jpg" alt="Credito Hipotecario">
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="itemImage-Container">
+                            <img class="itemImage" src="images/creditcard.jpg" alt="Targeta de credito">
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="itemImage-Container">
+                            <img class="itemImage" src="images/auto.jpg" alt="auto">
+                        </figure>
+                    </div>
+                    <div class="item" id="item">
+                        <h3>Credito de Vivienda</h3>
+                    </div>
+                    <div class="item" id="item">
+                        <h3>Targeta Platino Swiss</h3>
+                    </div>
+                    <div class="item" id="item">
+                        <h3>Credito para vehiculos</h3>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="box-frase" id="fraseDos">
+            <h1>Planes adicionales de Crédito</h1>
+    </section>
+    <section class="creditos" id="creditos">
+            <div class="box">
+                <div class="boxItem">
+                    <figure class="boxImage-Container">
+                        <img class="boxImage-Item" src="images/financiar.jpg" alt="Financiación">
+                    </figure>
+                </div>
+                <div class="boxItem" id="boxItem">
+                    <h3>Financiamiento para Empresas</h3>
+                    <p>Ya sea que tengas una PYME o gran Empresa,<br>
+                        Swissbank se encargará de darte el musculo,<br>
+                        financiero que necesitas</p>
+                </div>
+                <div class="boxItem">
+                    <figure class="boxImage-Container">
+                        <img class="boxImage-Item" src="images/granja.jpg" alt="Granja">
+                    </figure>
+                </div>
+                <div class="boxItem" id="boxItem">
+                    <h3>El campo lo financiamos con Swiss</h3>
+                    <p>Swiss es conciente de la importancia del campo, <br>
+                        para LATAM, por esto traemos los mejores planes<br>
+                        de inversion bancaria para este sector.<br>
+                        Te apoyamos porque nos gusta verte crecer.</p>
+                </div>
+            </div>
+    </section>
+    <section class="socialMedia">
+        <h1>¿Tienes dudas, buscanos en redes sociales?</h1>
+        <div class="SMcontainer">
+            <a class="social-link" href="https://www.facebook.com/santiagocomag/">
+                <img class="social-icon" src="images/facebook.png" alt="facebook" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://twitter.com/santiagocomag" target="_blank">
+                <img class="social-icon" src="images/twitter.png" alt="twitter" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/santiagocomag/">
+                <img class="social-icon" src="images/instagram.png" alt="instagram" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://github.com/Santiago125">
+                <img class="social-icon" src="images/github.png" alt="github" width="50" height="50">
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div id="containerFooter">
+            <img src="images/icon.png" alt="Suiza" width="40" height="40">
+            <p> Modelo Frontend Banco</p>
+        </div>
+        <div>
+            <p id="fraseFooter">Designed with Lov <\3 for <a id="myTwitter" href="https://twitter.com/santiagocomag">@santiagocomag</a></p>
+        </div>
+    </footer>
+    <script>
+        //console.log('Hola Mundo JS')
+            
+        const smarthPhone = window.matchMedia('screen and (max-width: 480px') 
+            const menu = document.querySelector('.header-menu')
+            //console.log(menu)
+            const burgerButton = document.querySelector('#burger-menu')
+            //console.log(burgerButton)
+            
+
+            smarthPhone.addListener(validation)
+            validation(smarthPhone)
+
+            function validation (event){
+                if (event.matches){
+                    burgerButton.addEventListener('click', hideShow)
+                }else{
+                    burgerButton.removeEventListener('click', hideShow)
+                }
+                //console.log(event)
+            }
+
+
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active')
+                }else{
+                    menu.classList.add('is-active')
+                }
+            }
+    </script>
+</body>
+</html>
