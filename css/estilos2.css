@@ -111,7 +111,7 @@ h3{
 
 .fraseUno-content h4{
     font-family: 'PT Sans', sans-serif;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 0;
     margin-left: 50px;
     font-weight: lighter;
@@ -130,7 +130,7 @@ h3{
 
 .hero{
     display: flex;
-    margin: 0 20px;
+    margin: 20px 10px;
 }
 
 .hero-imageContainer{
@@ -141,7 +141,7 @@ h3{
 
 .hero-image{
     width: 100%;
-    height: 550px;
+    height: 480px;
     border: 5px solid transparent;
     border-radius: 10px;
     object-fit: cover;
@@ -150,43 +150,42 @@ h3{
     margin: none;
 }
 
-.menu{
+.plan{
     display: block;
-    border: 1px solid red;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 20px ;
-    background-color: #ff0000;
-    padding: 20px;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0px 2px 9px -2px rgba(0,0,0,1)
-}
-
-.menuContainer{
-    display: flex;
+    margin: 35px 7px ;  
 }
 
 .block{
     display: grid;
-    grid-template: 40px/ repeat(4, minmax(200px, 1fr));
-    grid-column-gap: 5em;
+    grid-template: auto / repeat(3, minmax(370px, 1fr));
+    grid-column-gap: 5%;
 }
 
-.menuLink{
-    text-decoration: none;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
+.item{
+    border: 1px solid transparent;
+    padding: 0;
     margin: 0;
-    text-align: center;
-    align-items: center;
-    padding: 10px 0px;
-    
-    
+    overflow: hidden;
 }
 
-#menuLink{
-    border-left: 4px solid white;
+#item{
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    border-radius: 0px 0px 11px 11px;
+    position: relative;
+    margin-top: -10px;
+}
+
+.itemImage-Container{
+    padding: 0;
+    margin: 0;
+}
+
+.itemImage{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 #fraseDos{
@@ -195,59 +194,60 @@ h3{
     font-size: 30px;
 }
 
-.servicios{
-    padding-right: 40px;
-    padding-left: 15px;
-    display: flex;
+.creditos{
+    margin: 20px 15px 0px;
 }
 
 
 .box{
-    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(2, 400px) / 850px 250px;
+    border-radius: 7px;
     margin: 20px; 
-    background-color: white;
-    box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-    overflow: hidden;
+    width: auto;
+    justify-content: center;
+    grid-row-gap: 2%;
 }
 
-.box-image{
+.boxImage-Container{
+    margin: 0;
+    padding: 0;
+}
+
+.boxImage-Item{
     padding: 0;
     margin: 0;
-}
-
-#Limage{
-    max-width: 100%;
-    height: 100%;
-}
-
-.imageBox{
     object-fit: cover;
-    padding: inherit;
-}
-
-.primeracaja{
-    padding-right: 40px;
-    padding-left: 40px;
-    background-color: white;
-    position: relative;
-}
-
-.primeracaja p{
-    font-family: 'PT Sans', sans-serif;
-}
-
-.segundacaja{
-    color: white;
-    margin-top: -520px;
-    padding-left: 20px;
-}
-
-.segundacaja p{
-    font-family: 'PT Sans', sans-serif; 
+    width: 100%;
+    height: 400px;
 }
 
 .socialMedia{
     text-align: center;
+}
+
+.boxItem{
+    position: relative;
+    background-color: transparent;
+    color: white;
+}
+
+#boxItem{
+    background-color: rgba(255,0,0);
+    margin-left: -120px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#boxItem h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+#boxItem p{
+    font-family:"PT Sans", sans-serif;
+    font-size: 20px;
 }
 
 .socialMedia h1{
@@ -259,7 +259,7 @@ h3{
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    padding: 150px;
+    padding: 80px;
     padding-bottom: 0;
     margin: 0;
     padding-top: 60px;
@@ -267,63 +267,8 @@ h3{
 
 .social-icon{
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
-}
-
-#fraseTres{
-    text-align: center;
-    font-size: 25px;
-    color: #808285;
-}
-
-.question{
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.buzon{  
-    border: 1px solid white;
-    padding-right: 40px;
-    padding-left: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-    height: 357px;
-}
-
-#buzonDos{
-    border-top: 4px solid black;
-}
-
-#fraseCuatro{
-    text-align: center;
-    font-size: 27px;
-    color: #808285;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-#fraseCuatro p{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.image-boxfrase{
-    margin-left: 20px;
-    padding-left: inherit;
-    padding: 0;
-}
-
-.imageCuatro{
-    height: 400px;
-    width: 700px;
-    border: 4px solid transparent;
-    border-radius: 10px;
 }
 
 .footer{
