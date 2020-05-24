@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ofertas</title>
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header" id="header">
+        <figure class="header-imageContainer">
+            <img class="header-image" src="images/logo.png" alt="logo swissbank" height="80">
+        </figure>
+        <nav class="header-menu" id="menu">
+            <ol class="linkBox">
+                <li>
+                    <a class="link" href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" href="./need.html">Necesidades</a>
+                </li>
+                <li>
+                    <a class="link" href="#header">Ofertas</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <section class="box-frase" id="fraseUno">
+        <article class="fraseUno-content">
+            <h1>Ofertas Swiss para usuarios Premium</h1>
+        </article>
+    </section>
+    <section class="box">
+        <div class="block">
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/viaje.jpg" alt="Imagen de Viaje">
+                </figure>
+                <div class="frase">
+                    <h4>El viaje de tu vida</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/bitcoin.jpg" alt="Bitcoin">
+                </figure>
+                <div class="frase">
+                    <h4>Compra de Criptomonedas</h4>   
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/ecommerce.jpg" alt="ecommerce">
+                </figure>
+                <div class="frase">
+                    <h4>Compras Electronicas</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/fitness.jpg" alt="fitness">
+                </figure>
+                <div class="frase">
+                    <h4>Convenios Fitness</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/ahorro.jpg" alt="Ahorro">
+                </figure>
+                <div class="frase">
+                    <h4>Cuenta de ahorro Internacional</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/salud.jpg" alt="Salud">
+                </figure>
+                <div class="frase">
+                    <h4>Plan de Salud Privada</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/netflix.jpg" alt="Netflix">
+                </figure>
+                <div class="frase">
+                    <h4>Pago de Streaming</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/empresario.jpg" alt="Empresario">
+                </figure>
+                <div class="frase">
+                    <h4>Inversión a StartUps</h4>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-Container">
+                    <img class="itemImage" src="images/lifesecure.jpg" alt="Seguro de Vida">
+                </figure>
+                <div class="frase">
+                    <h4>Seguro de Vida</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="socialMedia">
+        <h1>No olvides visitarnos en redes sociales</h1>
+        <div class="SMcontainer">
+            <a class="social-link" href="https://www.facebook.com/santiagocomag/">
+                <img class="social-icon" src="images/facebook.png" alt="facebook" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://twitter.com/santiagocomag" target="_blank">
+                <img class="social-icon" src="images/twitter.png" alt="twitter" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/santiagocomag/">
+                <img class="social-icon" src="images/instagram.png" alt="instagram" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://github.com/Santiago125">
+                <img class="social-icon" src="images/github.png" alt="github" width="50" height="50">
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div id="containerFooter">
+            <img src="images/icon.png" alt="Suiza" width="40" height="40">
+            <p> Modelo Frontend Banco</p>
+        </div>
+        <div>
+            <p id="fraseFooter">Designed with Lov <\3 for <a id="myTwitter" href="https://twitter.com/santiagocomag">@santiagocomag</a></p>
+        </div>
+    </footer>
+    <script>
+        //console.log('Hola Mundo JS')
+            
+        const smarthPhone = window.matchMedia('screen and (max-width: 480px') 
+            const menu = document.querySelector('.header-menu')
+            //console.log(menu)
+            const burgerButton = document.querySelector('#burger-menu')
+            //console.log(burgerButton)
+            
+
+            smarthPhone.addListener(validation)
+            validation(smarthPhone)
+
+            function validation (event){
+                if (event.matches){
+                    burgerButton.addEventListener('click', hideShow)
+                }else{
+                    burgerButton.removeEventListener('click', hideShow)
+                }
+                //console.log(event)
+            }
+
+
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active')
+                }else{
+                    menu.classList.add('is-active')
+                }
+            }
+    </script>
+</body>
+</html>
