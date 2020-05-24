@@ -91,7 +91,8 @@ ul{
 
 h1,
 h2,
-h3{
+h3,
+h4{
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -100,155 +101,71 @@ h3{
     text-decoration: none;
 }
 
+.fraseUno-content{
+    margin-top: 26px;
+    text-align: center;
+}
+
 .fraseUno-content h1{
     font-family: 'Nunito Sans', sans-serif;
     color: #808285;
-    font-size: 49px;
+    font-size: 35px;
     line-height: 49px;
     margin-top: 3px;
     margin-bottom: 12px;
 }
 
-.fraseUno-content h4{
-    font-family: 'PT Sans', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 0;
-    margin-left: 50px;
-    font-weight: lighter;
-}
-
-.fraseUno-content p{
-    font-family: 'PT Sans', sans-serif;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #808285;
-}
-
-.box-frase{
-    margin: 0 100px 0 100px;
-}
-
-.hero{
-    display: flex;
-    margin: 20px 10px;
-}
-
-.hero-imageContainer{
-    display: inherit;
-    margin: inherit;
-    padding: inherit;
-}
-
-.hero-image{
-    width: 100%;
-    height: 480px;
-    border: 5px solid transparent;
-    border-radius: 10px;
-    object-fit: cover;
-    display: block;
-    background-image: url();
-    margin: none;
-}
-
-.plan{
-    display: block;
-    margin: 35px 7px ;  
+.box{
+    margin: 25px;
 }
 
 .block{
     display: grid;
-    grid-template: auto / repeat(3, minmax(370px, 1fr));
-    grid-column-gap: 5%;
+    grid-template: repeat(3, minmax(370px, 1fr)) / repeat(3, minmax(370px, 1fr));
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    grid-column-gap: 2%;
 }
 
 .item{
-    border: 1px solid transparent;
-    padding: 0;
+    display: grid;
+    grid-template: 1fr 100px / auto;
+}
+
+.image-Container{
     margin: 0;
+    padding: 0;
+    height: 280px;
     overflow: hidden;
-}
-
-#item{
-    background-color: #ff0000;
-    color: white;
-    text-align: center;
-    border-radius: 0px 0px 11px 11px;
-    position: relative;
-    margin-top: -10px;
-}
-
-.itemImage-Container{
-    padding: 0;
-    margin: 0;
 }
 
 .itemImage{
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
 }
 
-#fraseDos{
+.frase{
+    background-color: #ff0000;
+    color: white;
     text-align: center;
-    color: #808285;
-    font-size: 30px;
-}
-
-.creditos{
-    margin: 20px 15px 0px;
-}
-
-
-.box{
-    display: grid;
-    grid-template: repeat(2, 400px) / 850px 250px;
-    border-radius: 7px;
-    margin: 20px; 
-    width: auto;
-    justify-content: center;
-    grid-row-gap: 2%;
-}
-
-.boxImage-Container{
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -20px;
+    position: relative;
 }
 
-.boxImage-Item{
-    padding: 0;
+.frase h4{
+    font-size: 22px;
     margin: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+    margin-top: 10px;
 }
 
 .socialMedia{
     text-align: center;
-}
-
-.boxItem{
-    position: relative;
-    background-color: transparent;
-    color: white;
-}
-
-#boxItem{
-    background-color: rgba(255,0,0);
-    margin-left: -120px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-#boxItem h3{
-    font-size: 25px;
-    text-align: center;
-}
-
-#boxItem p{
-    font-family:"PT Sans", sans-serif;
-    font-size: 20px;
 }
 
 .socialMedia h1{
@@ -296,11 +213,10 @@ h3{
     color: white;
 }
 
-@media screen and (max-width: 1400px){
-    .block{
-        grid-column-gap: 3em;
+@media screen and (max-width: 1280px){
+    .frase{
+        margin-top: -60px;
     }
-
 }
 
 @media screen and (max-width: 1024px){
@@ -309,21 +225,7 @@ h3{
     }
 
     .block{
-        grid-gap: 2%;
-        grid-template: auto / repeat(3, minmax(200px, 1fr));
-    }
-
-    .menuLink{
-        padding: 10px;
-        align-items: flex-end;
-    }
-
-    .box{
-        grid-template: repeat(2, 400px) / 700px 200px;
-    }
-
-    #boxItem{
-        margin-left: -180px;
+        grid-template: repeat(3, minmax(350px, 1fr)) / repeat(2, minmax(250px, 1fr));
     }
 
     .socialMedia{
@@ -346,36 +248,19 @@ h3{
         display: inherit;
     }
 
+    .itemImage{
+        height: 360px;
+    }
+
+    .frase{
+        margin-top: 0;
+    }
+
     .header-menu{
         text-align: center;
         justify-content: center;
         align-items: center;
         align-self: center;
-    }
-
-    .box{
-        grid-template: repeat(2, 360px) / 600px 180px;
-    }
-
-    .boxImage-Item{
-        height: 360px;
-        overflow: hidden;
-    }
-
-    .box-frase{
-        margin: 0 50px;
-    }
-
-    #boxItem h3{
-        font-size: 22px;
-    }
-
-    #boxItem p{
-        font-size: 18px;
-    }
-
-    #articulo{
-        padding: 20px 30px;
     }
 
 }
@@ -426,7 +311,11 @@ h3{
     }
 
     .box-frase{
-        margin: 0 15px;
+        margin-bottom: 50px;
+    }
+
+    .box{
+        margin: 7px;
     }
 
     .fraseUno-content h1 {
@@ -435,64 +324,33 @@ h3{
     }
 
     .block{
-        grid-gap: 1%;
-        grid-template: 253px / repeat(3, 1fr);
-    }
-    
-
-    #item h3{
-        font-size: 16px;
+        grid-template: repeat(4, minmax(200px, 300px)) / repeat(2, minmax(160px, 220px));
     }
 
-    .creditos{
-        margin: 0;
+    .itemImage{
+        height: 220px;
     }
 
-    .box{
-        grid-template: 300px 150px 300px 150px / 1fr;
-        margin: 0;
+    .frase{
+        margin-top: -90px;
+        position: relative;
     }
 
-    .boxImage-Item{
-        height: 300px;
-        overflow: hidden;
-    }
-
-    #boxItem{
-        margin-left: initial;
-    }
-
-    #boxItem h3{
+    .frase h4{
         font-size: 14px;
-    }
-
-    #boxItem p{
-        font-size: 14px;
-    }
-
-    .socialMedia h1{
-        font-size: 25px;
-        line-height: 35px;
-    }
-
-    .hero{
-        margin: 0;
-    }
-
-    .hero-imageContainer{
-        margin: 0;
-        padding: 0;
-        border-radius: none;
-    }
-
-    .hero-image{
-        border: none;
-        border-radius: none;
     }
 
     .socialMedia{
         display: block;
-        margin-top: 120px;
+        margin-top: 15px;
+    }
+
+    .socialMedia h1{
+        font-size: 22px;
+        margin: 0;
+        margin-top: -60px;
+        margin-bottom: 20px;
+        position: relative;
     }
 
     #fraseFooter{
@@ -506,15 +364,21 @@ h3{
     }
 
     .block{
-        grid-gap: 0.3%;
-        grid-template: 200px / repeat(3, 1fr);
+        grid-template: repeat(5, minmax(175px, 200px)) / repeat(2, minmax(140px, 160px));
+        grid-row-gap: 5%;
+        margin-bottom: 240px;
     }
 
-    #item{
-        margin-top: 0;
+    .itemImage{
+        height: 180px;
     }
 
-    #item  h3{
+    .frase{
+        margin-top: -100px;
+        height: 45px;
+    }
+
+    .frase h4{
         font-size: 12px;
     }
 
@@ -522,6 +386,7 @@ h3{
         font-size: 25px;
         line-height: 33px;
         margin: 0;
+        margin-bottom: 100px;
     }
 
     .menu{
