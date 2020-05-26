@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?rjo76b');
+    src:  url('../fonts/icomoon.eot?rjo76b#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?rjo76b') format('truetype'),
+      url('../fonts/icomoon.woff?rjo76b') format('woff'),
+      url('../fonts/icomoon.svg?rjo76b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgba(255,255,255,1);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); 
+}
+
+.burger-button{
+    font-size: 30px;
+    position: fixed;
+    color: white;
+    background-color:rgba(255,0,0,.8);
+    padding: 7px;
+    border-radius: 50%;
+    margin: 10px ;
+    z-index: 5;
+    display: none;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #ff0000;
+    justify-content: space-between;
+    height: 80px;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: -4px 13px 8px -13px rgba(0,0,0,0.75);
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header a{
+    padding: 0 40px 0 40px;
+}
+
+.header-imageContainer{
+    background-color: #ff0000;
+    height: 80px;
+    display: flex;
+    margin-top: 0;
+}
+
+.header-menu{
+    display: flex;
+    align-self: center;
+}
+
+ol,
+ul{
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.fraseUno-content{
+    margin-top: 26px;
+    text-align: center;
+}
+
+.fraseUno-content h1{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #808285;
+    font-size: 35px;
+    line-height: 49px;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+.box{
+    margin: 25px;
+}
+
+.block{
+    display: grid;
+    grid-template: repeat(4, minmax(370px, 1fr)) / 1200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    grid-row-gap: 2%;
+}
+
+.item{
+    display: grid;
+    grid-template: 450px / 800px 1fr;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -2px 7px 9px -4px rgba(77,75,77,0.62);
+}
+
+.item-imageContainer{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.item-image{
+    width: 100%;
+    height: 100%;
+}
+
+.item-description{
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.item-description h3{
+    font-size: 26px;
+}
+
+.item-description p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+.socialMedia{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.socialMedia h1{
+    color: #808285;
+    font-size: 40px;
+}
+
+.social-link{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 80px;
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.social-icon{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer{
+    background-color: #ff0000;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    margin-top: 40px;
+    font-family: 'PT Sans', sans-serif;
+    align-content: center;
+    align-items: center;
+}
+
+#containerFooter{
+    display: flex;
+    align-items: center;
+}
+
+#myTwitter{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1280px){
+   
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        display: block;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(370px, 1fr)) / 800px;
+    }
+
+    .item{
+        grid-template: 370px / 500px 1fr;
+    }
+
+    .item-description h3{
+        font-size: 24px;
+    }
+
+    .item-description p{
+        font-size: 16px;
+    }
+
+    .extra{
+        display: none;
+    }
+    
+    .social-link{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header-imageContainer{
+        text-align: center;
+        display: inherit;
+    }
+
+    .header-menu{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(300px, 1fr)) / 600px;
+    }
+
+    .item{
+        grid-template: 300px / 350px 1fr;
+    }
+
+    .item-description{
+        padding-top: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .item-description h3{
+        font-size: 18px;
+    }
+
+    .item-description p{
+        font-size: 14px;
+    }
+
+    .socialMedia h1{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    #menu{
+        position: fixed;
+    }
+
+    .icon-menu{
+        display: initial;
+    }
+
+    .header-menu{
+        display: flex;
+        position: fixed;
+        background-color: rgba(255,0,0,.8);
+        height: 1;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        z-index: 3;
+        left: -100vw;
+    }
+
+    .header-menu.is-active{
+        left: 0;
+    }
+
+    .header-menu ol {
+        display: block;
+    }
+
+    .header .linkBox{
+        margin: 0;
+        padding: 0;
+    }
+
+    .linkBox{
+        display: inherit;
+    }
+
+    .link{
+        font-size: 2em;
+    }
+
+    .box-frase{
+        margin-bottom: 10px;
+    }
+
+    .box{
+        margin: 7px;
+    }
+
+    .fraseUno-content h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(250px, 1fr)) / 350px;
+        grid-row-gap: 7px;
+    }
+
+    .item{
+        grid-template: 220px / 220px 1fr;
+    }
+
+    .item-description{
+        padding-top: 7px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .item-description h3{
+        font-size: 14px;
+    }
+
+    .item-description p{
+        font-size: 11px;
+    }
+
+    .socialMedia{
+        display: block;
+        margin-top: 15%;
+    }
+
+    .socialMedia h1{
+        font-size: 22px;
+        margin: 0;
+        margin-top: -60px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #fraseFooter{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .fraseUno-content h1{
+        font-size: 28px;
+    }
+
+    .box-frase h1{
+        font-size: 22px;
+        line-height: 33px;
+        margin: 0;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(200px, 1fr)) / 300px;
+        grid-row-gap: 14px;
+    }
+
+    .item{
+        grid-template: 200px / 190px 1fr;
+    }
+
+    .socialMedia{
+        margin-top: 25%;
+    }
+
+    .menu{
+        padding: 5px;
+    }
+
+    .menuLink{
+        font-size: 12px;
+    }
+
+}
