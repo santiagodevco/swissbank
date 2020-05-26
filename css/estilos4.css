@@ -121,51 +121,52 @@ h4{
 
 .block{
     display: grid;
-    grid-template: repeat(3, minmax(370px, 1fr)) / repeat(3, minmax(370px, 1fr));
+    grid-template: repeat(4, minmax(370px, 1fr)) / 1200px;
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    grid-column-gap: 2%;
+    grid-row-gap: 2%;
 }
 
 .item{
     display: grid;
-    grid-template: 1fr 100px / auto;
-}
-
-.image-Container{
-    margin: 0;
-    padding: 0;
-    height: 280px;
+    grid-template: 450px / 800px 1fr;
+    background-color: transparent;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: -2px 7px 9px -4px rgba(77,75,77,0.62);
 }
 
-.itemImage{
+.item-imageContainer{
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: auto;
 }
 
-.frase{
+.item-image{
+    width: 100%;
+    height: 100%;
+}
+
+.item-description{
     background-color: #ff0000;
     color: white;
     text-align: center;
-    margin: 0;
-    padding: 10px;
-    height: 50px;
-    align-items: center;
-    border-radius: 0px 0px 10px 10px;
-    margin-top: -25px;
-    position: relative;
+    padding-top: 17px;
 }
 
-.frase h4{
-    font-size: 22px;
-    margin: 0;
-    margin-top: 10px;
+.item-description h3{
+    font-size: 26px;
+}
+
+.item-description p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
 }
 
 .socialMedia{
     text-align: center;
+    margin-top: 10%;
 }
 
 .socialMedia h1{
@@ -214,9 +215,7 @@ h4{
 }
 
 @media screen and (max-width: 1280px){
-    .frase{
-        margin-top: -60px;
-    }
+   
 }
 
 @media screen and (max-width: 1024px){
@@ -225,13 +224,25 @@ h4{
     }
 
     .block{
-        grid-template: repeat(3, minmax(350px, 1fr)) / repeat(2, minmax(250px, 1fr));
+        grid-template: repeat(4, minmax(370px, 1fr)) / 800px;
     }
 
-    .socialMedia{
-        margin: 0;
+    .item{
+        grid-template: 370px / 500px 1fr;
     }
 
+    .item-description h3{
+        font-size: 24px;
+    }
+
+    .item-description p{
+        font-size: 16px;
+    }
+
+    .extra{
+        display: none;
+    }
+    
     .social-link{
         padding: 20px;
     }
@@ -248,19 +259,37 @@ h4{
         display: inherit;
     }
 
-    .itemImage{
-        height: 360px;
-    }
-
-    .frase{
-        margin-top: 0;
-    }
-
     .header-menu{
         text-align: center;
         justify-content: center;
         align-items: center;
         align-self: center;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(300px, 1fr)) / 600px;
+    }
+
+    .item{
+        grid-template: 300px / 350px 1fr;
+    }
+
+    .item-description{
+        padding-top: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .item-description h3{
+        font-size: 18px;
+    }
+
+    .item-description p{
+        font-size: 14px;
+    }
+
+    .socialMedia h1{
+        font-size: 35px;
     }
 
 }
@@ -311,7 +340,7 @@ h4{
     }
 
     .box-frase{
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .box{
@@ -324,25 +353,31 @@ h4{
     }
 
     .block{
-        grid-template: repeat(4, minmax(200px, 300px)) / repeat(2, minmax(160px, 220px));
+        grid-template: repeat(4, minmax(250px, 1fr)) / 350px;
+        grid-row-gap: 7px;
     }
 
-    .itemImage{
-        height: 220px;
+    .item{
+        grid-template: 220px / 220px 1fr;
     }
 
-    .frase{
-        margin-top: -90px;
-        position: relative;
+    .item-description{
+        padding-top: 7px;
+        padding-right: 7px;
+        padding-left: 7px;
     }
 
-    .frase h4{
+    .item-description h3{
         font-size: 14px;
+    }
+
+    .item-description p{
+        font-size: 11px;
     }
 
     .socialMedia{
         display: block;
-        margin-top: 15px;
+        margin-top: 15%;
     }
 
     .socialMedia h1{
@@ -363,30 +398,23 @@ h4{
         font-size: 28px;
     }
 
-    .block{
-        grid-template: repeat(5, minmax(175px, 200px)) / repeat(2, minmax(140px, 160px));
-        grid-row-gap: 5%;
-        margin-bottom: 240px;
-    }
-
-    .itemImage{
-        height: 180px;
-    }
-
-    .frase{
-        margin-top: -100px;
-        height: 45px;
-    }
-
-    .frase h4{
-        font-size: 12px;
-    }
-
     .box-frase h1{
-        font-size: 25px;
+        font-size: 22px;
         line-height: 33px;
         margin: 0;
-        margin-bottom: 100px;
+    }
+
+    .block{
+        grid-template: repeat(4, minmax(200px, 1fr)) / 300px;
+        grid-row-gap: 14px;
+    }
+
+    .item{
+        grid-template: 200px / 190px 1fr;
+    }
+
+    .socialMedia{
+        margin-top: 25%;
     }
 
     .menu{
