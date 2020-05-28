@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/estilos5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necesidades</title>
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header" id="header">
+        <figure class="header-imageContainer">
+            <img class="header-image" src="images/logo.png" alt="logo swissbank" height="80">
+        </figure>
+        <nav class="header-menu" id="menu">
+            <ol class="linkBox">
+                <li>
+                    <a class="link" href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" href="./need.html">Necesidades</a>
+                </li>
+                <li>
+                    <a class="link" href="./ofert.html">Ofertas</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <section class="box-frase" id="fraseUno">
+        <article class="fraseUno-content">
+            <h1>Conoce nuestras novedades</h1>
+        </article>
+    </section>
+    <section class="hero">
+        <div class="hero-container">
+            <figure class="logo">
+                <img class="logoImage" src="images/icon.png" alt="icono">
+            </figure>
+            <h1 class="title">Registrate Ahora</h1>
+            <div class="description">
+                <p>Swiss Bank es más que un banco, somos una comunidad, que trabaja
+                    por Latinoamerica.<br/>
+                    Por eso nuestro compromiso va más allá de ser una entidad bancaria.<br/>
+                    Nuestro comprimo esta con las personas de este continente<br/>
+                    Swiss Bank llego para quedarse, y hacer de tu vida bancaria<br/>
+                    una experiencia placentera.
+                </p>
+            </div>
+            <form action="" class="form">
+                <p>Envianos tus datos</p>
+                <input type="text" placeholder="Nombres">
+                <input type="text" placeholder="Apellidos">
+                <input type="number" placeholder="Cel/Tel">
+                <input type="email" placeholder="example@gmail.com">
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="slogan">
+                <p>Swiss Bank es tu Banco Amigo</p>
+            </div>
+        </div>
+    </section>
+    <section class="socialMedia">
+        <h1>No olvides visitarnos en redes sociales</h1>
+        <div class="SMcontainer">
+            <a class="social-link" href="https://www.facebook.com/santiagocomag/">
+                <img class="social-icon" src="images/facebook.png" alt="facebook" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://twitter.com/santiagocomag" target="_blank">
+                <img class="social-icon" src="images/twitter.png" alt="twitter" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/santiagocomag/">
+                <img class="social-icon" src="images/instagram.png" alt="instagram" width="50" height="50">
+            </a>
+            <a class="social-link" href="https://github.com/Santiago125">
+                <img class="social-icon" src="images/github.png" alt="github" width="50" height="50">
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div id="containerFooter">
+            <img src="images/icon.png" alt="Suiza" width="40" height="40">
+            <p> Modelo Frontend Banco</p>
+        </div>
+        <div>
+            <p id="fraseFooter">Designed with Lov <\3 for <a id="myTwitter" href="https://twitter.com/santiagocomag">@santiagocomag</a></p>
+        </div>
+    </footer>
+    <script>
+        //console.log('Hola Mundo JS')
+            
+        const smarthPhone = window.matchMedia('screen and (max-width: 480px') 
+            const menu = document.querySelector('.header-menu')
+            //console.log(menu)
+            const burgerButton = document.querySelector('#burger-menu')
+            //console.log(burgerButton)
+            
+
+            smarthPhone.addListener(validation)
+            validation(smarthPhone)
+
+            function validation (event){
+                if (event.matches){
+                    burgerButton.addEventListener('click', hideShow)
+                }else{
+                    burgerButton.removeEventListener('click', hideShow)
+                }
+                //console.log(event)
+            }
+
+
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active')
+                }else{
+                    menu.classList.add('is-active')
+                }
+            }
+    </script>
+</body>
+</html>
