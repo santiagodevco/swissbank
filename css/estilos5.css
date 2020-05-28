@@ -203,7 +203,8 @@ h4{
 
 .socialMedia{
     text-align: center;
-    margin-top: 0;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .socialMedia h1{
@@ -252,7 +253,10 @@ h4{
 }
 
 @media screen and (max-width: 1280px){
-   
+    .socialMedia{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -262,6 +266,18 @@ h4{
     
     .social-link{
         padding: 20px;
+    }
+
+    .hero-container{
+        grid-template-columns:150px 1fr 320px;
+        grid-template-areas: ". title ."
+                          "logo description description"
+                          ". slogan ."
+                          "form form form";
+    }
+
+    .socialMedia{
+        margin-bottom: 30%;
     }
 }
 
@@ -282,27 +298,9 @@ h4{
         align-items: center;
         align-self: center;
     }
-
-    .block{
-        grid-template: repeat(4, minmax(300px, 1fr)) / 600px;
-    }
-
-    .item{
-        grid-template: 300px / 350px 1fr;
-    }
-
-    .item-description{
-        padding-top: 30px;
-        padding-right: 7px;
-        padding-left: 7px;
-    }
-
-    .item-description h3{
-        font-size: 18px;
-    }
-
-    .item-description p{
-        font-size: 14px;
+    
+    .socialMedia{
+        margin-bottom: initial;
     }
 
     .socialMedia h1{
@@ -369,27 +367,34 @@ h4{
         line-height: 35px;
     }
 
-    .block{
-        grid-template: repeat(4, minmax(250px, 1fr)) / 350px;
-        grid-row-gap: 7px;
+    .hero{
+        margin: 0 5px 0 5px;
     }
 
-    .item{
-        grid-template: 220px / 220px 1fr;
+    .hero-container{
+        grid-template-columns:80px 1fr 15px;
+        grid-template-areas: ". title ."
+                          "logo description description"
+                          ". slogan ."
+                          "form form form";
     }
 
-    .item-description{
-        padding-top: 7px;
-        padding-right: 7px;
-        padding-left: 7px;
+    .title{
+        font-size: 20px;
     }
 
-    .item-description h3{
+    .description p{
         font-size: 14px;
+        margin-right: 7px;
     }
 
-    .item-description p{
-        font-size: 11px;
+    .slogan p{
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
     }
 
     .socialMedia{
@@ -421,13 +426,34 @@ h4{
         margin: 0;
     }
 
-    .block{
-        grid-template: repeat(4, minmax(200px, 1fr)) / 300px;
-        grid-row-gap: 14px;
+    .hero{
+        margin: 0 3px 0 3px;
     }
 
-    .item{
-        grid-template: 200px / 190px 1fr;
+    .hero-container{
+        grid-template-columns:50px 1fr 15px;
+        grid-template-areas: ". title ."
+                          "logo description description"
+                          ". slogan ."
+                          "form form form";
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 12px;
+        margin-right: 7px;
+    }
+
+    .slogan p{
+        font-size: 18px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
     }
 
     .socialMedia{
